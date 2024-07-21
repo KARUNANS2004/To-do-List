@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#item{
+    margin-bottom: 20px;
+    border-bottom: solid 3px gray;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    color: gray;
+    width: 100%;
+}
+
+#item img{
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+#item img:hover{
+    transform: scale(1.1);
+}
+
+#item p{
+    cursor: pointer;
+    width: 80%;
+    text-align: left;
+}
+
+@media screen and (max-width:360px){
+    #item p{
+        width: auto;
+    }
+}
